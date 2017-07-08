@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rock paper scissors</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Choose one</h1>
+	<section id="user">
+		<img id="rock" onclick="getname(this); compare(userChoice, computerChoice); addClass()" src="images/rock.png" name="Rock"/>
+		<img id="paper" onclick="getname(this); compare(userChoice, computerChoice); addClass()" src="images/paper.png" name="Paper"/>
+		<img id="scissors" onclick="getname(this); compare(userChoice, computerChoice); addClass()" src="images/scissors.png" name="Scissors"/>
+	</section>
+
+ 	<h2>Computer's choice</h2>
+<!-- 	<section id="computer">
+ -->		<div class="img-swap"><div id="blank1"></div></div>
+<!-- 		<div class="img-swap"><div id="blank2"></div></div>
+		<div class="img-swap"><div id="blank3"></div></div> -->
+	<section id="buttons">	
+	<h3 id="yourChoice"></h3>
+	<button id="again" onclick="refreshPage()">Again?</button>
+	</section>
+	<script src="script.js"> </script>
+</body>
+</html>
